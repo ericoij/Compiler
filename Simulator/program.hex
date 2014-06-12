@@ -1,0 +1,144 @@
+                                                                               ; 
+                                                                               ; 
+1000: 40               L0                                                       ;  JMP L0
+1000: 40               10                       02                              ;  JMP L0
+                                                                               ; 
+                                                                               ; 
+1002: 32               0                                                        ;  MVI A , 0
+1002: 32               0                                                        ;  MVI A , 0
+1007: 31               A                                                        ;  MOV M , A
+1007: 31               A                                                        ;  MOV M , A
+100D: 34               0                                                        ;  LXI AR , 0
+100D: 34               0                                                        ;  LXI AR , 0
+1012: 32               0                                                        ;  MVI A , 0
+1012: 32               0                                                        ;  MVI A , 0
+1017: 31               A                                                        ;  MOV M , A
+1017: 31               A                                                        ;  MOV M , A
+101D: 34               4                                                        ;  LXI AR ,4
+101D: 34               4                                                        ;  LXI AR ,4
+1021: 34               4                                                        ;  LXI AR , 4
+1021: 34               4                                                        ;  LXI AR , 4
+1026: 32               0                                                        ;  MVI A , 0
+1026: 32               0                                                        ;  MVI A , 0
+102B: 10               M                                                        ;  ADD M , A
+102B: 10               M                                                        ;  ADD M , A
+102F: 31               A                                                        ;  MOV M , A
+102F: 31               A                                                        ;  MOV M , A
+1035: 34               4                                                        ;  LXI AR ,4
+1035: 34               4                                                        ;  LXI AR ,4
+1039: 34               4                                                        ;  LXI AR , 4
+1039: 34               4                                                        ;  LXI AR , 4
+103E: 32               0                                                        ;  MVI A , 0
+103E: 32               0                                                        ;  MVI A , 0
+1043: 31               A                                                        ;  MOV M , A
+1043: 31               A                                                        ;  MOV M , A
+1049: 34               0                                                        ;  LXI AR , 0
+1049: 34               0                                                        ;  LXI AR , 0
+104E: 32               0                                                        ;  MVI A , 0
+104E: 32               0                                                        ;  MVI A , 0
+1053: 31               A                                                        ;  MOV M , A
+1053: 31               A                                                        ;  MOV M , A
+1059: 34               5                                                        ;  LXI AR ,5
+1059: 34               5                                                        ;  LXI AR ,5
+105D: 34               5                                                        ;  LXI AR , 5
+105D: 34               5                                                        ;  LXI AR , 5
+1062: 32               0                                                        ;  MVI A , 0
+1062: 32               0                                                        ;  MVI A , 0
+1067: 10               M                                                        ;  ADD M , A
+1067: 10               M                                                        ;  ADD M , A
+106B: 31               A                                                        ;  MOV M , A
+106B: 31               A                                                        ;  MOV M , A
+1071: 34               6                                                        ;  LXI AR ,6
+1071: 34               6                                                        ;  LXI AR ,6
+1075: 34               6                                                        ;  LXI AR , 6
+1075: 34               6                                                        ;  LXI AR , 6
+107A: 32               0                                                        ;  MVI A , 0
+107A: 32               0                                                        ;  MVI A , 0
+107F: 10               M                                                        ;  ADD M , A
+107F: 10               M                                                        ;  ADD M , A
+1083: 31               A                                                        ;  MOV M , A
+1083: 31               A                                                        ;  MOV M , A
+1089: 34               7                                                        ;  LXI AR ,7
+1089: 34               7                                                        ;  LXI AR ,7
+108D: 34               7                                                        ;  LXI AR , 7
+108D: 34               7                                                        ;  LXI AR , 7
+1092: 32               0                                                        ;  MVI A , 0
+1092: 32               0                                                        ;  MVI A , 0
+1097: 10               M                                                        ;  ADD M , A
+1097: 10               M                                                        ;  ADD M , A
+109B: 31               A                                                        ;  MOV M , A
+109B: 31               A                                                        ;  MOV M , A
+10A1: 34               9                                                        ;  LXI AR ,9
+10A1: 34               9                                                        ;  LXI AR ,9
+10A5: 34               9                                                        ;  LXI AR , 9
+10A5: 34               9                                                        ;  LXI AR , 9
+10AA: 32               0                                                        ;  MVI A , 0
+10AA: 32               0                                                        ;  MVI A , 0
+10AF: 10               M                                                        ;  ADD M , A
+10AF: 10               M                                                        ;  ADD M , A
+10B3: 31               A                                                        ;  MOV M , A
+10B3: 31               A                                                        ;  MOV M , A
+10B9: 34               9                                                        ;  LXI AR ,9
+10B9: 34               9                                                        ;  LXI AR ,9
+10BD: 34               9                                                        ;  LXI AR , 9
+10BD: 34               9                                                        ;  LXI AR , 9
+10C2: 12               M                                                        ;  SUB M 
+10C2: 12               M                                                        ;  SUB M 
+10C7: 34               0                                                        ;  LXI AR , 0
+10C7: 34               0                                                        ;  LXI AR , 0
+10CC: 32               0                                                        ;  MVI A , 0
+10CC: 32               0                                                        ;  MVI A , 0
+10D1: 31               A                                                        ;  MOV M , A
+10D1: 31               A                                                        ;  MOV M , A
+10D7: 34               0                                                        ;  LXI AR , 0
+10D7: 34               0                                                        ;  LXI AR , 0
+10DC: 32               0                                                        ;  MVI A , 0
+10DC: 32               0                                                        ;  MVI A , 0
+10E1: 31               A                                                        ;  MOV M , A
+10E1: 31               A                                                        ;  MOV M , A
+10E7: 34               10                                                       ;  LXI AR ,10
+10E7: 34               10                                                       ;  LXI AR ,10
+10EB: 34               10                                                       ;  LXI AR , 10
+10EB: 34               10                                                       ;  LXI AR , 10
+10F0: 32               0                                                        ;  MVI A , 0
+10F0: 32               0                                                        ;  MVI A , 0
+10F5: 10               M                                                        ;  ADD M , A
+10F5: 10               M                                                        ;  ADD M , A
+10F9: 31               A                                                        ;  MOV M , A
+10F9: 31               A                                                        ;  MOV M , A
+10FF: 34               11                                                       ;  LXI AR ,11
+10FF: 34               11                                                       ;  LXI AR ,11
+1103: 34               11                                                       ;  LXI AR , 11
+1103: 34               11                                                       ;  LXI AR , 11
+1108: 32               0                                                        ;  MVI A , 0
+1108: 32               0                                                        ;  MVI A , 0
+110D: 10               M                                                        ;  ADD M , A
+110D: 10               M                                                        ;  ADD M , A
+1111: 31               A                                                        ;  MOV M , A
+1111: 31               A                                                        ;  MOV M , A
+1117: 34               11                                                       ;  LXI AR ,11
+1117: 34               11                                                       ;  LXI AR ,11
+111B: 34               11                                                       ;  LXI AR , 11
+111B: 34               11                                                       ;  LXI AR , 11
+1120: 32               0                                                        ;  MVI A , 0
+1120: 32               0                                                        ;  MVI A , 0
+1125: 10               M                                                        ;  ADD M , A
+1125: 10               M                                                        ;  ADD M , A
+1129: 31               A                                                        ;  MOV M , A
+1129: 31               A                                                        ;  MOV M , A
+112F: 34               12                                                       ;  LXI AR ,12
+112F: 34               12                                                       ;  LXI AR ,12
+1133: 34               12                                                       ;  LXI AR , 12
+1133: 34               12                                                       ;  LXI AR , 12
+1138: 32               0                                                        ;  MVI A , 0
+1138: 32               0                                                        ;  MVI A , 0
+113D: 10               M                                                        ;  ADD M , A
+113D: 10               M                                                        ;  ADD M , A
+1141: 31               A                                                        ;  MOV M , A
+1141: 31               A                                                        ;  MOV M , A
+1147: 34               12                                                       ;  LXI AR ,12
+1147: 34               12                                                       ;  LXI AR ,12
+114B: 34               12                                                       ;  LXI AR , 12
+114B: 34               12                                                       ;  LXI AR , 12
+1150: 51                                                                        ;  HLT
+1150: 51                                                                        ;  HLT
