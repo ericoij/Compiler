@@ -1,0 +1,232 @@
+Statement 1://program
+Correct Statement----------------------------------------
+Statement 2:
+Correct Statement----------------------------------------
+Statement 3:main()
+Token 0: main    attribute:rsWrd    Address: 0
+Token 1: (    attribute:spcChr    Address: 0
+Token 2: )    attribute:spcChr    Address: 0
+Parse = main 
+Parse = main ( 
+Parse = main ( ) 
+Parse = spcState 
+Parse = stmt 
+Correct Statement----------------------------------------
+Statement 4:var x, y, z, port;
+Token 0: var    attribute:rsWrd    Address: 0
+Token 1: x    attribute:iden    Address: 0
+Token 2: ,    attribute:spcChr    Address: 0
+Token 3: y    attribute:iden    Address: 1
+Token 4: ,    attribute:spcChr    Address: 0
+Token 5: z    attribute:iden    Address: 2
+Token 6: ,    attribute:spcChr    Address: 0
+Token 7: port    attribute:iden    Address: 3
+Token 8: ;    attribute:spcChr    Address: 0
+Parse = var 
+Parse = var iden 
+Parse = var iden , 
+Parse = var iden , iden 
+Parse = var idntSeq 
+Parse = var idntSeq , 
+Parse = var idntSeq , iden 
+Parse = var idntSeq 
+Parse = var idntSeq , 
+Parse = var idntSeq , iden 
+Parse = var idntSeq 
+Parse = var idntSeq ; 
+Parse = spcState 
+Parse = stmt 
+Correct Statement----------------------------------------
+Statement 5:proc display, delay;
+Token 0: proc    attribute:rsWrd    Address: 0
+Token 1: display    attribute:procName    Address: 1500
+Token 2: ,    attribute:spcChr    Address: 0
+Token 3: delay    attribute:procName    Address: 1501
+Token 4: ;    attribute:spcChr    Address: 0
+Parse = proc 
+Parse = proc procName 
+Parse = proc procName , 
+Parse = proc procName , procName 
+Parse = proc procSeq 
+Parse = proc procSeq ; 
+Parse = spcState 
+Parse = stmt 
+Correct Statement----------------------------------------
+Statement 6:
+Correct Statement----------------------------------------
+Statement 7:x := 10;
+Token 0: x    attribute:iden    Address: 0
+Token 1: :=    attribute:assnOp    Address: 0
+Token 2: 10    attribute:num    Address: 0
+Token 3: ;    attribute:spcChr    Address: 0
+Rimproper use of the assnOp at token# 1
+Parse = iden 
+Parse = iden assnOp 
+Parse = iden assnOp num 
+Parse = iden assnOp term 
+Parse = iden assnOp term ; 
+Parse = assnStmt 
+Parse = stmt 
+Correct Statement----------------------------------------
+Statement 8:y :=  -2; 
+Token 0: y    attribute:iden    Address: 1
+Token 1: :=    attribute:assnOp    Address: 0
+Token 2: -    attribute:oper    Address: 0
+Token 3: 2    attribute:num    Address: 0
+Token 4: ;    attribute:spcChr    Address: 0
+Parse = iden 
+Parse = iden assnOp 
+Parse = iden assnOp oper 
+Parse = iden assnOp oper num 
+Parse = iden assnOp oper term 
+Parse = iden assnOp expr 
+Parse = iden assnOp term 
+Parse = iden assnOp term ; 
+Parse = assnStmt 
+Parse = stmt 
+Correct Statement----------------------------------------
+Statement 9:z := y;
+Token 0: z    attribute:iden    Address: 2
+Token 1: :=    attribute:assnOp    Address: 0
+Token 2: y    attribute:iden    Address: 1
+Token 3: ;    attribute:spcChr    Address: 0
+Parse = iden 
+Parse = iden assnOp 
+Parse = iden assnOp term 
+Parse = iden assnOp term ; 
+Parse = assnStmt 
+Parse = stmt 
+Correct Statement----------------------------------------
+Statement 10:z := +x-(-y-1); // assign start
+Token 0: z    attribute:iden    Address: 2
+Token 1: :=    attribute:assnOp    Address: 0
+Token 2: +    attribute:oper    Address: 0
+Token 3: x    attribute:iden    Address: 0
+Token 4: -    attribute:oper    Address: 0
+Token 5: (    attribute:spcChr    Address: 0
+Token 6: -    attribute:oper    Address: 0
+Token 7: y    attribute:iden    Address: 1
+Token 8: -    attribute:oper    Address: 0
+Token 9: 1    attribute:num    Address: 0
+Token 10: )    attribute:spcChr    Address: 0
+Token 11: ;    attribute:spcChr    Address: 0
+Parse = iden 
+Parse = iden assnOp 
+Parse = iden assnOp oper 
+Parse = iden assnOp oper term 
+Parse = iden assnOp expr 
+Parse = iden assnOp term 
+Parse = iden assnOp term oper 
+Parse = iden assnOp term oper ( 
+Parse = iden assnOp term oper ( oper 
+Parse = iden assnOp term oper ( oper term 
+Parse = iden assnOp term oper ( expr 
+Parse = iden assnOp term oper ( term 
+Parse = iden assnOp term oper ( term oper 
+Parse = iden assnOp term oper ( term oper num 
+Parse = iden assnOp term oper ( term oper term 
+Parse = iden assnOp term oper ( expr 
+Parse = iden assnOp term oper ( term 
+Parse = iden assnOp term oper ( term ) 
+Parse = iden assnOp term oper term 
+Parse = iden assnOp expr 
+Parse = iden assnOp term 
+Parse = iden assnOp term ; 
+Parse = assnStmt 
+Parse = stmt 
+Correct Statement----------------------------------------
+Statement 11:
+Correct Statement----------------------------------------
+Statement 12:if y == 0 then x:=2; //if start
+Token 0: if    attribute:rsWrd    Address: 0
+Token 1: y    attribute:iden    Address: 1
+Token 2: ==    attribute:relOp    Address: 0
+Token 3: 0    attribute:num    Address: 0
+Token 4: then    attribute:rsWrd    Address: 0
+Token 5: x    attribute:iden    Address: 0
+Token 6: :=    attribute:assnOp    Address: 0
+Token 7: 2    attribute:num    Address: 0
+Token 8: ;    attribute:spcChr    Address: 0
+Rimproper use of the assnOp at token# 6
+Parse = if 
+Parse = if iden 
+Parse = if iden relOp 
+Parse = if iden relOp num 
+Parse = if iden relOp term 
+Parse = if relExpr 
+Parse = if relExpr then 
+Parse = ifStart 
+Parse = ifStart iden 
+Parse = ifStart iden assnOp 
+Parse = ifStart iden assnOp num 
+Parse = ifStart iden assnOp term 
+Parse = ifStart iden assnOp term ; 
+Parse = ifStart assnStmt 
+Parse = ifStart stmt 
+Parse = ifState 
+Parse = stmt 
+Correct Statement----------------------------------------
+Statement 13:while x>= -10 do {x:=x-1; y :=+5;}//composite start
+Token 0: while    attribute:rsWrd    Address: 0
+Token 1: x    attribute:iden    Address: 0
+Token 2: >=    attribute:relOp    Address: 0
+Token 3: -    attribute:oper    Address: 0
+Token 4: 10    attribute:num    Address: 0
+Token 5: do    attribute:rsWrd    Address: 0
+Token 6: {    attribute:spcChr    Address: 0
+Token 7: x    attribute:iden    Address: 0
+Token 8: :=    attribute:assnOp    Address: 0
+Token 9: x    attribute:iden    Address: 0
+Token 10: -    attribute:oper    Address: 0
+Token 11: 1    attribute:num    Address: 0
+Token 12: ;    attribute:spcChr    Address: 0
+Token 13: y    attribute:iden    Address: 1
+Token 14: :=    attribute:assnOp    Address: 0
+Token 15: +    attribute:oper    Address: 0
+Token 16: 5    attribute:num    Address: 0
+Token 17: ;    attribute:spcChr    Address: 0
+Token 18: }    attribute:spcChr    Address: 0
+Parse = while 
+Parse = while iden 
+Parse = while iden relOp 
+Parse = while iden relOp oper 
+Parse = while iden relOp oper num 
+Parse = while iden relOp oper term 
+Parse = while iden relOp expr 
+Parse = while iden relOp term 
+Parse = while relExpr 
+Parse = while relExpr do 
+Parse = whileStart 
+Parse = whileStart term 
+Parse = whileStart term iden 
+Parse = whileStart term iden assnOp 
+Parse = whileStart term iden assnOp term 
+Parse = whileStart term iden assnOp term oper 
+Parse = whileStart term iden assnOp term oper num 
+Parse = whileStart term iden assnOp term oper term 
+Parse = whileStart term iden assnOp expr 
+Parse = whileStart term iden assnOp term 
+Parse = whileStart term iden assnOp term ; 
+Parse = whileStart term assnStmt 
+Parse = whileStart term stmt 
+Parse = whileStart term stmt iden 
+Parse = whileStart term stmt iden assnOp 
+Parse = whileStart term stmt iden assnOp oper 
+Parse = whileStart term stmt iden assnOp oper num 
+Parse = whileStart term stmt iden assnOp oper term 
+Parse = whileStart term stmt iden assnOp expr 
+Parse = whileStart term stmt iden assnOp term 
+Parse = whileStart term stmt iden assnOp term ; 
+Parse = whileStart term stmt assnStmt 
+Parse = whileStart term stmt stmt 
+Parse = whileStart term stmt 
+Parse = whileStart term stmt } 
+Wrong!!!!!!!!!----------------------------------------
+Statement 14:
+Correct Statement----------------------------------------
+Statement 15:end
+Token 0: end    attribute:rsWrd    Address: 0
+Parse = end 
+Parse = spcState 
+Parse = stmt 
+Correct Statement----------------------------------------

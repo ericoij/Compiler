@@ -1,0 +1,140 @@
+ORG: 1000
+JMP L0
+L0:1010
+MVI A , 0
+LXI AR , 0
+MOV M , A
+MVI A , 0
+LXI AR , 0
+MOV M , A
+MVI A , 0
+LXI AR , 0
+MOV M , A
+MVI A , 0
+LXI AR ,4
+ADD M , A
+LXI AR , 4
+MOV M , A
+MVI A , 0
+LXI AR ,4
+ADD M , A
+LXI AR , 4
+MOV M , A
+MVI A , 0
+LXI AR ,4
+ADD M , A
+LXI AR , 4
+MOV M , A
+MVI A , 0
+LXI AR , 0
+MOV M , A
+MVI A , 0
+LXI AR , 0
+MOV M , A
+MVI A , 0
+LXI AR , 0
+MOV M , A
+MVI A , 0
+LXI AR ,5
+ADD M , A
+LXI AR , 5
+MOV M , A
+MVI A , 0
+LXI AR ,5
+ADD M , A
+LXI AR , 5
+MOV M , A
+MVI A , 0
+LXI AR ,6
+ADD M , A
+LXI AR , 6
+MOV M , A
+MVI A , 0
+LXI AR ,6
+ADD M , A
+LXI AR , 6
+MOV M , A
+MVI A , 0
+LXI AR ,7
+ADD M , A
+LXI AR , 7
+MOV M , A
+MVI A , 0
+LXI AR ,8
+ADD M , A
+LXI AR , 8
+MOV M , A
+MVI A , 0
+LXI AR ,9
+ADD M , A
+LXI AR , 9
+MOV M , A
+MVI A , 0
+LXI AR ,9
+ADD M , A
+LXI AR , 9
+MOV M , A
+MVI A , 0
+LXI AR ,9
+ADD M , A
+LXI AR , 9
+MOV M , A
+SUB M 
+MVI A , 0
+LXI AR , 0
+MOV M , A
+MVI A , 0
+LXI AR , 0
+MOV M , A
+MVI A , 0
+LXI AR , 0
+MOV M , A
+MVI A , 0
+LXI AR , 0
+MOV M , A
+MVI A , 0
+LXI AR ,10
+ADD M , A
+LXI AR , 10
+MOV M , A
+MVI A , 0
+LXI AR ,10
+ADD M , A
+LXI AR , 10
+MOV M , A
+MVI A , 0
+LXI AR ,11
+ADD M , A
+LXI AR , 11
+MOV M , A
+MVI A , 0
+LXI AR ,11
+ADD M , A
+LXI AR , 11
+MOV M , A
+MVI A , 0
+LXI AR ,11
+ADD M , A
+LXI AR , 11
+MOV M , A
+MVI A , 0
+LXI AR ,11
+ADD M , A
+LXI AR , 11
+MOV M , A
+MVI A , 0
+LXI AR ,12
+ADD M , A
+LXI AR , 12
+MOV M , A
+MVI A , 0
+LXI AR ,12
+ADD M , A
+LXI AR , 12
+MOV M , A
+MVI A , 0
+LXI AR ,12
+ADD M , A
+LXI AR , 12
+MOV M , A
+HLT

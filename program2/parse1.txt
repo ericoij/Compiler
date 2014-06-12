@@ -1,0 +1,12 @@
+main()
+var x,y
+
+x=0
+while x >= 20 do {call up call down call display}
+
+end
+
+up()
+if input := 1 then x:=x+1;
+if x>= 10 then x:=0;
+end
